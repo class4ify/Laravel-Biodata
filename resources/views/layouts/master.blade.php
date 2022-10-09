@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/components.css')}}">
 </head>
 
-<body>
+<body class="sidebar-mini">
     <div id="app">
         <div class="main-wrapper">
             @include('layouts.navbar')
