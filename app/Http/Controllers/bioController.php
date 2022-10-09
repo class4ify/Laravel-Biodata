@@ -31,7 +31,7 @@ class bioController extends Controller
         $request->validate(
             [
                 "nama" => "required",
-                "nis" => "required|unique:bio_models",
+                "nis" => "required|min:10|max:10|unique:bio_models",
                 "kelas" => "required",
                 "email" => "required|unique:bio_models",
                 "tgllhr" => "required",
@@ -40,6 +40,7 @@ class bioController extends Controller
                 "nama.required" => "Nama tidak boleh kosong",
                 "nis.required" => "NIS tidak boleh kosong",
                 "nis.unique" => "NIS sudah terdaftar",
+                "nis.max"=>"NIS tidak boleh lebih dari 10",
                 "kelas.required" => "Kelas tidak boleh kosong",
                 "email.required" => "Email tidak boleh kosong",
                 "email.unique" => "Email sudah terdaftar",

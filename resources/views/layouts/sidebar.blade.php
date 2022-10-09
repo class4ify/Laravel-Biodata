@@ -1,10 +1,10 @@
 <div class="main-sidebar">
   <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-      <a href="/data">Stisla</a>
+      <a href="/data">BIODATA</a>
     </div>
     <div class="sidebar-brand sidebar-brand-sm">
-      <a href="/data">St</a>
+      <a href="/data">BD</a>
     </div>
     <ul class="sidebar-menu">
       <li class="menu-header">Biodata</li>

@@ -10,10 +10,12 @@
   <ul class="navbar-nav navbar-right">
     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
         <img alt="image" src="{{asset('assets/img/avatar/avatar-5.png')}}" class="rounded-circle mr-1">
-        <div class="d-sm-none d-lg-inline-block">Hi, Rahman</div>
+        @auth
+        <div class="d-sm-none d-lg-inline-block">Hi, {{Auth()->User()->name}}</div>
+        @endauth
       </a>
       <div class="dropdown-menu dropdown-menu-right">
-        <div class="dropdown-title">Logged in 5 min ago</div>
+        <!-- <div class="dropdown-title">Logged in 5 min ago</div> -->
         <a href="/profile" class="dropdown-item has-icon">
           <i class="far fa-user"></i> Profile
         </a>
